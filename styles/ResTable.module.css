@@ -1,0 +1,42 @@
+.tableWrapper {
+    flex: 1;
+    max-height: calc(100% - 449px);
+}
+
+.results {
+    /* background: #fafafa; */
+    width: 100%;
+    display: table;
+    table-layout: fixed;
+}
+
+.result {
+    display: table-row;
+}
+.result:hover {
+    cursor: pointer;
+    background-color: #eee;
+}
+.result.selected {
+    background-color: #ddd;
+}
+
+.filename {
+    padding: 5px 10px;
+    width: 160px;
+    display: table-cell;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.page {
+    padding: 5px;
+    width: 25px;
+    display: table-cell;
+}
+
+.text {
+    padding: 5px 10px;
+    display: table-cell;
+}

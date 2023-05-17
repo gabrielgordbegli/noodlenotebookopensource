@@ -1,0 +1,69 @@
+.link {
+    color: #000000;
+    text-decoration: none;
+}
+
+.link:hover {
+    color: #0000ff;
+    text-decoration: underline;
+}
+
+.list-item {
+    list-style-type: none;
+    font-size: larger;
+}
+
+.transcripts {
+    position: fixed;
+    top: 3em;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    border: none;
+    overflow: hidden;
+}
+
+.child {
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    padding-right: 17px;
+    /* Increase/decrease this value for cross-browser compatibility */
+    box-sizing: content-box;
+    /* So the width will be 100% + 17px */
+}
+
+.embed {
+    border: none;
+    position: fixed;
+    width: 50%;
+    height: 107%;
+    top: 1em;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2em;
+    padding-bottom: 4em;
+}
+
+.frame-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    /* 16:9 */
+    padding-top: 25px;
+    width: 300%;
+    /* enlarge beyond browser width */
+    left: -100%;
+    /* center */
+}
+
+.frame-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
